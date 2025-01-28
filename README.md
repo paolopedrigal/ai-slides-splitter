@@ -29,11 +29,15 @@ The goal of this assignment is to develop a program that leverages an LLM to spl
 
 ## Notes
 
+### Currently in the works
+
+I'm planning on refactoring this solution to use [AIJSX](https://www.npmjs.com/package/@gammatech/aijsx) instead of Python. More to come soon.
+
 ### Why I chose Python and GPT-4o Mini
 
 Not only would I naturally use Python for data science and machine learning tasks as I did in previous work and projects, I believe this PL is good for small tasks (like this assignment) and for readability (for you to check my solution).
 
-- However, I am open to using LLM's in server-side JS environments as well!
+- However, I am currently working on a solution in AIJSX!
 
 I initially chose OpenAI's GPT-4o Mini because this is honestly the LLM I've worked with the most out of the 3 allowed. But, after doing more [research](https://www.nebuly.com/blog/gpt-4o-mini-vs-claude-3-haiku-vs-gemini-1-5-flash), I continued to use GPT-4o Mini, since it yields the highest MMLU, which I believe would be more helpful in categorizing the slides for this assignment.
 
@@ -49,4 +53,4 @@ Additionally, since the prompt would be accepting an _entire_ markdown document 
 
 I'd recommend fine-tuning to create a _custom model_ for possibly better results, if allowed to use a different model than gpt-4o-mini, claude-3-haiku, gemini-1.5-flash.
 
-- However, I'd need to generate own dataset train the new model, but we'd have our own model geared toward slideshow presentations.
+- However, I'd need to generate own dataset train the new model, so we'd have our own model geared toward slideshow presentations.
