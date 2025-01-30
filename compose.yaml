@@ -1,9 +1,0 @@
-services:
-  gamma:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: gamma
-    env_file: ./.env
-    volumes:
-      - .:/gamma
