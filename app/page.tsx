@@ -1,11 +1,3 @@
-/**
- * This is the main page for the AI.JSX Next.js App Demo.
- *
- * This page invokes the /api/poem edge function via a fetch call, passing in the
- * prompt to the LLM. The edge function (found in api/poem/route.tsx) runs AI.JSX,
- * passes the prompt to the LLM and streams the result back to the client.
- */
-
 "use client";
 
 import { useState, useRef } from "react";
@@ -100,9 +92,6 @@ function SlidesGenerator() {
   );
 }
 
-/**
- * The main page for the AI.JSX Next.js App.
- */
 export default function Home() {
   return <SlidesGenerator />;
 }
