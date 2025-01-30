@@ -17,9 +17,7 @@ import {
 export const runtime = "edge";
 
 export async function POST(req: Request) {
-  // Extract the 'topic' field from the JSON body of the request.
   const { document, target, delimiter } = await req.json();
-  console.log("Submitted");
 
   const systemMessage = `
     You are highly skilled text processor that analyzes markdown documents
