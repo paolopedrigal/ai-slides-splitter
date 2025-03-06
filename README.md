@@ -12,7 +12,7 @@ The goal of this project is to develop a program that leverages an LLM to split 
 - [AI JSX](https://docs.ai-jsx.com/)
 - OpenAI API (gpt-4o-mini model)
 
-## Steps to run submission
+## Steps to run application
 
 1. Create your own OpenAI API Key from the [OpenAI dashboard](https://platform.openai.com/api-keys).
 2. Install [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/), if not already installed.
