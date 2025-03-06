@@ -19,8 +19,8 @@ The goal of this project is to develop a program that leverages an LLM to split 
 3. Run the below commands:
 
    ```
-    $ docker build -t gamma .
-    $ docker run -e OPENAI_API_KEY=<your api key> -p 3000:3000 gamma
+    $ docker build -t splitter .
+    $ docker run -e OPENAI_API_KEY=<your api key> -p 3000:3000 splitter
    ```
 
 4. Prompt locally at [http://localhost:3000/](http://localhost:3000/)
