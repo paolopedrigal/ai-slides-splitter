@@ -25,7 +25,7 @@ The goal of this assignment is to develop a program that leverages an LLM to spl
     $ docker run -e OPENAI_API_KEY=<your api key> -p 3000:3000 gamma
    ```
 
-4. Prompt locally at http://localhost:3000/
+4. Prompt locally at [http://localhost:3000/](http://localhost:3000/)
 
 ## Notes
 
