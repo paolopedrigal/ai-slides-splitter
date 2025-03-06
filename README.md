@@ -1,4 +1,4 @@
-# AI Presentation Slides Partitioner
+# AI Presentation Slides Splitter
 
 ## Description
 
