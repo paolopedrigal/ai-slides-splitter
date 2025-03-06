@@ -1,10 +1,8 @@
-# AI Engineer Homework for Gamma
-
-Submission by Paolo Pedrigal | paolopedrigal@gmail.com | [https://www.linkedin.com/in/paolopedrigal/](LinkedIn)
+# AI Presentation Slides Partitioner
 
 ## Description
 
-The goal of this assignment is to develop a program that leverages an LLM to split a document into sections. Ultimately, these sections would eventually become slides for a ready-to-go presentation @ Gamma.
+The goal of this project is to develop a program that leverages an LLM to split a document into sections. Ultimately, these sections would eventually become slides for a ready-to-go presentation.
 
 ## Tech Used
 
