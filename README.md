@@ -1,5 +1,7 @@
 # AI Presentation Slides Splitter
 
+![License Static Badge](https://img.shields.io/badge/license-MIT-orange)
+
 ## Description
 
 The goal of this project is to develop a program that leverages an LLM to split a document into sections. Ultimately, these sections would eventually become slides for a ready-to-go presentation.
