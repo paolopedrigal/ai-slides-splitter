@@ -12,15 +12,15 @@ The goal of this project is to develop a program that leverages an LLM to split 
 - [AI JSX](https://docs.ai-jsx.com/)
 - OpenAI API (gpt-4o-mini model)
 
-## Steps to run application
+## Steps to run application for development
 
 1. Create your own OpenAI API Key from the [OpenAI dashboard](https://platform.openai.com/api-keys).
 2. Install [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/), if not already installed.
 3. Run the below commands:
 
    ```
-    $ docker build -t splitter .
-    $ docker run -e OPENAI_API_KEY=<your api key> -p 3000:3000 splitter
+    $ docker build -t splitter-dev -f Dockerfile.dev .
+    $ docker run -e OPENAI_API_KEY=<your api key> -p 3000:3000 splitter-dev
    ```
 
 4. Prompt locally at [http://localhost:3000/](http://localhost:3000/)
