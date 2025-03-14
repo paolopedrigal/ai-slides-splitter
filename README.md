@@ -4,7 +4,7 @@
 
 ## Description
 
-The goal of this project is to develop a program that leverages an LLM to split a document into sections. Ultimately, these sections would eventually become slides for a ready-to-go presentation.
+The goal of this project is to develop a program that leverages an LLM to split a markdown document into sections. Ultimately, these sections would eventually become slides for a ready-to-go presentation.
 
 ## Tech Used
 
@@ -18,20 +18,15 @@ The goal of this project is to develop a program that leverages an LLM to split 
 
 1. Create your own OpenAI API Key from the [OpenAI dashboard](https://platform.openai.com/api-keys).
 2. Install [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/), if not already installed.
-3. Run the below commands:
+3. Run the below command:
 
    ```
-    $ docker build -t splitter-dev -f Dockerfile.dev .
-    $ docker run -e OPENAI_API_KEY=<your api key> -p 3000:3000 splitter-dev
+    $ docker-compose -f docker-compose.dev.yml up --build
    ```
 
 4. Prompt locally at [http://localhost:3000/](http://localhost:3000/)
 
 ## Notes
-
-### Currently in the works
-
-If time allows, I am planning on rendering the output of the slides in markdown with the [remark](https://github.com/remarkjs/remark) library. More to come soon.
 
 ### Why I chose GPT-4o Mini
 

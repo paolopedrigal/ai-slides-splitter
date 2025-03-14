@@ -37,7 +37,7 @@ export async function POST(req: Request) {
     \t5. Do not modify or add content within the partitions; they should remain identical to the original document.
     
     Document:
-    """${document}"""
+    ${document}
   `;
 
   // toStreamResponse() converts the JSX to a stream of JSON responses that can be read

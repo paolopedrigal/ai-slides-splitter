@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import ReactMarkdown from "react-markdown";
 import { useAIStream } from "ai-jsx/react";
 import {
   Badge,
@@ -11,8 +12,8 @@ import {
   For,
   HStack,
   Stack,
-  Text,
   Textarea,
+  VStack,
 } from "@chakra-ui/react";
 import {
   NumberInputField,
@@ -57,7 +58,7 @@ function SlidesGenerator() {
             }
           }}
         >
-          Generate Slides
+          Split into {target} Slides
         </Button>
       </Flex>
       <Container maxW={"5xl"} padding="20px" centerContent>
@@ -73,14 +74,16 @@ function SlidesGenerator() {
       <div ref={slidesRef}>
         {current && (
           <Stack>
-            <For each={(current as string[]).join("").split(delimiter)}>
+            <For each={(current as string[]).join(``).split(delimiter)}>
               {(item, index) => (
                 <Box borderWidth="1px" key={index} p="4">
-                  <HStack>
+                  <HStack gap="25px">
                     <Badge colorPalette="teal" variant="solid">
                       {index + 1}
                     </Badge>
-                    <Text padding="2">{item}</Text>
+                    <VStack>
+                      <ReactMarkdown>{item}</ReactMarkdown>
+                    </VStack>
                   </HStack>
                 </Box>
               )}
